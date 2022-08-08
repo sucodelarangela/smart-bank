@@ -6,7 +6,7 @@ import olho_icone from "../../assets/images/olho.svg";
 import dinheiro from "../../assets/images/dinheiro.svg";
 
 // importando o Icone global para uso no lugar de <img className="imagem-icone"/>
-import { Icone, Box, Botao, Saldo, Detalhe } from "../UI";
+import { Icone, Box, Botao, Saldo, Detalhe, IconeTema } from "../UI";
 
 // componente que irá herdar estilos de Icone. Dessa forma, podemos adicionar estilizações específicas para um determinado elemento sem aplicar as mesmas nos demais que seriam iguais
 const IconeMargin = styled(Icone)`
@@ -26,7 +26,7 @@ const Conta = () => {
       <div style={{ fontSize: "26px", padding: "20px 0" }}>
         Saldo disponível{" "}
         <span>
-          <Icone src={dinheiro} alt="Ícone Saldo" />
+          <IconeTema src={dinheiro} alt="Ícone Saldo" />
         </span>
         {toggleState ? (
           <Saldo>
