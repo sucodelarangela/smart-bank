@@ -4,7 +4,7 @@ import styled from 'styled-components';
 // quando usamos 'styled.', temos acesso à todas as tags html para estilização
 // os estilos do styled-components são feitos através de template literals ``
 const Titulo = styled.h1`
-  color: grey;
+  color: ${({ theme }) => theme.text};
   padding: 25px 0;
   `;
 
